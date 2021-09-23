@@ -20,14 +20,15 @@ function App() {
         <Header />
         <main className="container">
           <Switch>
-            <Redirect from="/" to="/buy" />
+            {/*<Redirect from="/" to="/buy" />*/}
+            <Redirect from="/" to="/SignIn" />
             <Route path="/products/" component={Products} />
             <Route path="/products/:id" component={ProductForm} />
             <Route path="/cart" component={ShoppingCart} />
             <Route path="/personal-info" component={PersonalInfo} />
             <Route path="/payment-info" component={PaymentInfo} />
             <Route path="/confirm-order" component={ConfirmOrder} />
-            <Route path="/orders" component={Orders} />
+            {/* <Route path="/orders" component={Orders} />*/}
             <Route path="/signin" component={SignIn} />
             <Route path="/register" component={Register} />
             <Route path="/buy" component={Shop} />
